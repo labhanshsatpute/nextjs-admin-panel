@@ -25,28 +25,28 @@ const Sidebar = () => {
             {/* Sidebar Item */}
             <li>
               <Link href={"/admin/dashboard"} className="flex items-center justify-start space-x-3 hover:text-ascent">
-                <FaTv size={20} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Dashboard</span>
+                <FaTv size={18} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Dashboard</span>
               </Link>
             </li>
 
             {/* Sidebar Item */}
             <li>
               <Link href={"/admin/setting"} className="flex items-center justify-start space-x-3 hover:text-ascent">
-                <FaTools size={20} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Settings</span>
+                <FaTools size={18} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Settings</span>
               </Link>
             </li>
 
             {/* Sidebar Item */}
             <li>
               <Link href={"/admin/dashboard"} className="flex items-center justify-start space-x-3 hover:text-ascent">
-                <FaTools size={20} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Settings</span>
+                <FaTools size={18} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Settings</span>
               </Link>
             </li>
 
             {/* Sidebar Item */}
             <li>
               <Link href={"/admin/dashboard"} className="flex items-center justify-start space-x-3 hover:text-ascent">
-                <FaTools size={20} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Settings</span>
+                <FaTools size={18} className="opacity-50" /><span className="font-medium tracking-widest text-sm">Settings</span>
               </Link>
             </li>
 
