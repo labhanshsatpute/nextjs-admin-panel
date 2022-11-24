@@ -54,7 +54,7 @@ const Dashboard = () => {
       <div>
         <h1 className="font-bold text-4xl text-white">Dashboard</h1>
       </div>
-      <div className="flex flex-col mt-10">
+      <div className="flex flex-col md:mt-10 sm:mt-5">
 
         <figure className="shadow-xl rounded-md overflow-hidden">
           <div className="py-4 px-6 bg-white flex items-center justify-between">
