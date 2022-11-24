@@ -3,8 +3,20 @@ import Admin from "../../layouts/Admin";
 
 import DataTable from 'react-data-table-component';
 import TableDropdown from "../../components/Dropdown/TableDropdown";
+import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
 
 const Dashboard = () => {
+
+  const crumbs = [
+    {
+      title: 'Dashboard',
+      path: '/admin/dashboard'
+    },
+    {
+      title: 'Designer',
+      path: '/admin/dashboard'
+    }
+  ]
 
   const columns = [
       {
@@ -52,7 +64,8 @@ const Dashboard = () => {
   return (
     <React.Fragment>
       <div>
-        <h1 className="font-bold text-4xl text-white">Dashboard</h1>
+        <h1 className="font-bold text-4xl text-white mb-3">Dashboard</h1>
+        <Breadcrumb crumbs={crumbs} />
       </div>
       <div className="flex flex-col md:mt-10 sm:mt-5">
 
