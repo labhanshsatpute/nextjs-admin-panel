@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Admin from "../../layouts/Admin";
 
 import DataTable from 'react-data-table-component';
+import TableDropdown from "../../components/Dropdown/TableDropdown";
 
 const Dashboard = () => {
 
@@ -10,7 +11,10 @@ const Dashboard = () => {
           name: 'Type',
           selector: row => row.type,
           sortable: true,
-          cell:(row) => <button onClick={() => alert('dsfsd')} >{row.type}</button>,
+      },
+      {
+          name: 'Profile',
+          cell: (row) => <img src={row.avatar_url} alt="image" className="h-14 w-14 p-1 rounded-full" />
       },
       {
           name: 'Login',
@@ -21,6 +25,10 @@ const Dashboard = () => {
           name: 'Node Id',
           selector: row => row.node_id,
           sortable: true,
+      },
+      {
+          name: 'Action',
+          cell:(row) => <TableDropdown />,
       },
   ];
 
