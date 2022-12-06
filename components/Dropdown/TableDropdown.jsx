@@ -17,9 +17,12 @@ const TableDropdown = () => {
 
   return (
     <React.Fragment>
-      <div className="relative" onClick={(event) => handleOpenDropdown(event)} onBlur={(event) => handleCloseDropdown(event)}>
+      <div className="relative" onBlur={(event) => handleCloseDropdown(event)}>
         <div>
-          <button type="button" className="inline-flex w-fit justify-center items-center rounded border bg-ascent text-white px-4 py-2 text-xs font-medium whitespace-nowrap">Options <TbChevronDown size={16} className={`ml-1 ${(state === 'hidden') ? 'rotate-0' : 'rotate-180'} `} /></button>
+          <button onClick={(event) => handleOpenDropdown(event)} type="button" className="inline-flex w-fit justify-center items-center rounded border bg-ascent text-white px-4 py-2 text-xs font-medium whitespace-nowrap">
+            Options 
+            <TbChevronDown size={16} className={`ml-1 ${(state === 'hidden') ? 'rotate-0' : 'rotate-180'} `} />
+          </button>
         </div>
         <div className={`absolute ${state} border right-0 z-10 mt-2 w-fit origin-top-right rounded bg-white border-slate-300 shadow-lg px-4 py-3`}>
           <ul className="flex flex-col space-y-3">

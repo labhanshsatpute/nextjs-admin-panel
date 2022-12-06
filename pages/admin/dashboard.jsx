@@ -4,6 +4,7 @@ import Admin from "../../layouts/Admin";
 import DataTable from 'react-data-table-component';
 import TableDropdown from "../../components/Dropdown/TableDropdown";
 import Breadcrumb from "../../components/Breadcrumb/Breadcrumb";
+import AuthDropdown from "../../components/Dropdown/AuthDropdown";
 
 const Dashboard = () => {
 
@@ -63,9 +64,12 @@ const Dashboard = () => {
 
   return (
     <React.Fragment>
-      <div>
-        <h1 className="font-bold text-4xl text-white mb-3">Dashboard</h1>
-        <Breadcrumb crumbs={crumbs} />
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="font-bold md:text-4xl sm:text-3xl text-white mb-3">Dashboard</h1>
+          <Breadcrumb crumbs={crumbs} />
+        </div>
+        <AuthDropdown/>
       </div>
       <div className="flex flex-col md:mt-10 sm:mt-5">
 

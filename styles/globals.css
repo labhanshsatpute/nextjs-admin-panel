@@ -23,33 +23,33 @@
 }
 
 /* Buttons (Start) */
-.btn-lg {
-    @apply px-6 py-3 border rounded text-lg outline-ascent border-ascent bg-ascent font-medium text-white relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark
+.btn-primary-lg {
+    @apply px-6 py-3 border rounded-md text-lg outline-ascent border-ascent bg-ascent font-medium text-white relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark
 }
-.btn-md {
-    @apply px-5 py-3 border rounded text-sm outline-ascent border-ascent bg-ascent font-medium text-white relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark
+.btn-primary-md {
+    @apply px-5 py-3 border rounded-md text-sm outline-ascent border-ascent bg-ascent font-medium text-white relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark
 }
-.btn-sm {
-    @apply px-4 py-2 border rounded text-xs outline-ascent border-ascent bg-ascent font-medium text-white relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark
+.btn-primary-sm {
+    @apply px-4 py-2 border rounded-md text-xs outline-ascent border-ascent bg-ascent font-medium text-white relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark
 }
 
 .btn-secondary-lg {
-    @apply px-6 py-3 border rounded text-lg outline-ascent font-medium text-slate-800 relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark border-opacity-10 hover:text-white
+    @apply px-6 py-3 border rounded-md text-lg outline-ascent font-medium text-slate-800 relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark border-opacity-10 hover:text-white
 }
 .btn-secondary-md {
-    @apply px-5 py-3 border rounded text-sm outline-ascent font-medium text-slate-800 relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark border-opacity-10 hover:text-white
+    @apply px-5 py-3 border rounded-md text-sm outline-ascent font-medium text-slate-800 relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark border-opacity-10 hover:text-white
 }
 .btn-secondary-sm {
-    @apply px-4 py-2 border rounded text-xs outline-ascent font-medium text-slate-800 relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark border-opacity-10 hover:text-white
+    @apply px-4 py-2 border rounded-md text-xs outline-ascent font-medium text-slate-800 relative active:ring-ascent-dark active:ring-2 ring-offset-2 hover:bg-ascent-dark active:bg-ascent-dark border-opacity-10 hover:text-white
 }
 .btn-danger-lg {
-    @apply px-6 py-3 border rounded text-lg bg-red-600 outline-red-700 font-medium text-red-800 relative active:ring-red-700 active:ring-2 ring-offset-2 hover:bg-red-800 active:bg-red-800 border-opacity-10 text-white
+    @apply px-6 py-3 border rounded-md text-lg bg-red-600 outline-red-700 font-medium text-red-800 relative active:ring-red-700 active:ring-2 ring-offset-2 hover:bg-red-800 active:bg-red-800 border-opacity-10 text-white
 }
 .btn-danger-md {
-    @apply px-5 py-3 border rounded text-sm bg-red-600 outline-red-700 font-medium text-red-800 relative active:ring-red-700 active:ring-2 ring-offset-2 hover:bg-red-800 active:bg-red-800 border-opacity-10 text-white
+    @apply px-5 py-3 border rounded-md text-sm bg-red-600 outline-red-700 font-medium text-red-800 relative active:ring-red-700 active:ring-2 ring-offset-2 hover:bg-red-800 active:bg-red-800 border-opacity-10 text-white
 }
 .btn-danger-sm {
-    @apply px-4 py-2 border rounded text-xs bg-red-600 outline-red-700 font-medium text-red-800 relative active:ring-red-700 active:ring-2 ring-offset-2 hover:bg-red-800 active:bg-red-800 border-opacity-10 text-white
+    @apply px-4 py-2 border rounded-md text-xs bg-red-600 outline-red-700 font-medium text-red-800 relative active:ring-red-700 active:ring-2 ring-offset-2 hover:bg-red-800 active:bg-red-800 border-opacity-10 text-white
 }
 button[disabled] {
     @apply opacity-70
@@ -58,13 +58,13 @@ button[disabled] {
 
 /* Input (Start) */
 .input-lg {
-    @apply px-6 py-3 border rounded text-lg outline-ascent border-slate-300 font-medium
+    @apply px-6 py-3 border rounded-md text-lg outline-ascent border-slate-300 font-medium
 }
 .input-md {
-    @apply px-5 py-3 border rounded text-sm outline-ascent border-slate-300 font-medium
+    @apply px-5 py-3 border rounded-md text-sm outline-ascent border-slate-300 font-medium
 }
 .input-sm {
-    @apply px-4 py-2 border rounded text-xs outline-ascent border-slate-300 font-medium
+    @apply px-4 py-2 border rounded-md text-xs outline-ascent border-slate-300 font-medium
 }
 select.input-md {
     @apply bg-white
@@ -113,83 +113,4 @@ aside#sidebar.active {
 }
 .alert-success-md span {
     @apply font-medium text-sm
-}
-
-.sidebar-tab {
-    @apply transition duration-200 ease-linear flex items-center py-3 px-7 space-x-4 text-slate-500 relative hover:text-slate-900 hover:bg-slate-50 hover:ease-linear
-}
-.sidebar-tab.active {
-    @apply flex items-center py-3 px-7 space-x-4 text-slate-800 relative after:content-[''] after:absolute after:h-full after:w-1 after:bg-ascent after:left-0 after:rounded-r-lg bg-ascent bg-opacity-10
-}
-.sidebar-tab.active svg {
-    @apply text-ascent
-}
-.sidebar-tab svg {
-    @apply h-5 w-5
-}
-.sidebar-tab span.text {
-    @apply whitespace-nowrap text-sm font-semibold
-}
-.breadcrum {
-    @apply flex items-center space-x-2 text-xs font-medium text-slate-600
-}
-.breadcrum li {
-    @apply flex items-center
-}
-.breadcrum li svg {
-    @apply h-4 w-4 stroke-2 mt-[1px]
-}
-table {
-    @apply border w-full
-}
-table thead tr {
-    @apply border-b
-}
-table tbody tr {
-    @apply border-b cursor-default hover:shadow-[0_0px_10px_rgba(0,0,0,0.4)] bg-white hover:z-10 relative hover:bg-slate-50 hover:cursor-pointer transition duration-200 ease-linear hover:ease-linear
-}
-table td {
-    @apply px-4 py-3 text-left text-sm font-medium text-slate-700
-}
-table th {
-    @apply px-4 py-3 text-left text-sm font-bold
-}
-#DataTables_Table_0_wrapper {
-    @apply grid grid-cols-2 justify-between gap-5 items-center
-}
-#DataTables_Table_0_filter {
-    @apply text-right
-}
-#DataTables_Table_0_filter input {
-    @apply px-4 py-2 border rounded text-xs outline-ascent border-slate-300 font-medium
-}
-#DataTables_Table_0_length label {
-    @apply px-4 py-2 border rounded text-xs outline-ascent border-slate-300 font-medium bg-transparent font-medium
-}
-#DataTables_Table_0_length select {
-    @apply px-4 py-2 rounded text-xs outline-ascent font-medium bg-transparent
-}
-#DataTables_Table_0_info {
-    @apply text-sm font-medium
-}
-#DataTables_Table_0_paginate {
-    @apply text-right
-}
-#DataTables_Table_0_paginate .paginate_button {
-    @apply px-4 py-2 text-xs bg-ascent bg-opacity-70 font-medium text-white relative hover:bg-ascent-dark active:bg-ascent-dark cursor-pointer
-}
-#DataTables_Table_0_paginate .paginate_button.previous {
-    @apply rounded-l-md
-}
-#DataTables_Table_0_paginate .paginate_button.disabled {
-    @apply bg-opacity-20 cursor-default
-}
-#DataTables_Table_0_paginate .paginate_button.current {
-    @apply bg-ascent-dark
-}
-#DataTables_Table_0_paginate .paginate_button.next {
-    @apply rounded-r-md
-}
-#DataTables_Table_0_wrapper table {
-    @apply col-span-2
 }
