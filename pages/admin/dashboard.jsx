@@ -14,7 +14,7 @@ const Dashboard = () => {
       path: '/admin/dashboard'
     },
     {
-      title: 'Designer',
+      title: 'Users',
       path: '/admin/dashboard'
     }
   ]
@@ -45,7 +45,7 @@ const Dashboard = () => {
       },
   ];
 
-  const [users,setUsers] = useState(null);
+  const [users,setUsers] = useState([]);
 
   useEffect(() => {
     try {
@@ -54,7 +54,6 @@ const Dashboard = () => {
         return response.json();
       })
       .then((data) => {
-        console.log(data);
         setUsers(data);
       });
     } catch (error) {
@@ -74,14 +73,17 @@ const Dashboard = () => {
       <div className="flex flex-col md:mt-10 sm:mt-5">
 
         <figure className="shadow-xl rounded-md overflow-hidden">
-          <div className="py-4 px-6 bg-white flex items-center justify-between">
+          <div className="p-6 bg-white flex items-center justify-between">
             <div>
-              <h1 className="font-semibold text-lg mb-1">Designers</h1>
-              <p className="text-xs text-slate-500">All registred designers list</p>
+              <h1 className="font-semibold text-lg mb-1">Users</h1>
+              <p className="text-xs text-slate-500">All registred users list</p>
             </div>
+            <div className="flex justify-end">  
+              <input type="search" className="input-md md:w-min sm:w-full"  placeholder="Search Designer"/>
+            </div>  
           </div>
           <div className="p-0 bg-slate-100 border-y">
-          { (users !== null) ? <DataTable columns={columns} data={users} pagination /> :null }
+            <DataTable columns={columns} data={users} pagination />
           </div>
         </figure>
         
