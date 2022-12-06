@@ -19,7 +19,7 @@ const AuthDropdown = () => {
     <React.Fragment>
       <div className="relative" onClick={(event) => handleOpenDropdown(event)} onBlur={(event) => handleCloseDropdown(event)}>
         <div>
-          <button type="button" className="h-[60px] w-[60px] flex items-center justify-center overflow-hidden rounded-full border-4 border-white">
+          <button type="button" className={`h-[60px] w-[60px] flex items-center justify-center overflow-hidden rounded-full border-4 ${(state === "hidden") ? 'border-white' : 'border-ascent'}`}>
             <img src="/profile.jpg" alt="user-profile" className="h-full w-full" />
           </button>
         </div>
